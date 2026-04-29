@@ -19,5 +19,4 @@ do
   echo "command: $command"
   $command
   
-
 done < "$account_list_file"

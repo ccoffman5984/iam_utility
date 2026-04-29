@@ -6,7 +6,6 @@ from datetime import date
 import os
 import sys
 
-
 account_id=sys.argv[1]
 
 # assume role to disable access keys
@@ -31,7 +30,7 @@ d1 = dt.datetime.strptime(current_date, "%Y-%m-%d").date()
 
 for user in response['Users']:
     
-# loop through users listing andd retrieve access keys
+# loop through users listing and retrieve access keys
 
    response = client.list_access_keys(UserName=user['UserName'])    
 
